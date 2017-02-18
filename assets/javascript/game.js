@@ -2,8 +2,8 @@ var wins = 0;
 var guesses = 12;
 var tries = [];			// array for letters tried that didn't work
 var blankSpace = []; 	// array for blank spaces for random selected word
-var wordBank = ["jobs", "keythe", "barney", "world", "adam", "gentrification", "jesus"];
-var winSound = new Audio("../level_up.ogx");
+var wordBank = ["brahmin", "caravan", "raider", "slaver", "centaur", "chems", "ghoul", "mutie", "nightkin", "skag", "smoothskin", "wanderer", "cateye", "psycho", "hydra", "jet", "turbo"];
+
 // get random word for computer
 var word = wordBank[Math.floor(Math.random() * wordBank.length)];
 
@@ -85,7 +85,7 @@ document.onkeyup = function(event){
 
 			if (isWinner === word){
 				wins++;
-				winSound.play();
+
 				reset();
 			}
 		}
