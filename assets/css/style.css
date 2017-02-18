@@ -1,9 +1,33 @@
 body {
 	font-family: 'Share Tech Mono', monospace;
-	color: #41FC91;
+	font-size: 14px;
+	color: #1AFF80;
 	background: url("../images/fallout_background.jpg");
 }
 
 * {
 	box-sizing: border-box;
+}
+
+/*special heading*/
+@font-face {
+	font-family: "fallout-font";
+	src: url("Overseer-Bold-Italic.otf");
+}
+
+.fallout {
+	font-family: fallout-font;
+	text-shadow: 2px 2px grey;
+	font-size: 80px;
+}
+.container {
+	width: 100%;
+	max-width: 680px;
+}
+
+.main-content {
+	height: 450px;
+	background: black;
+	opacity: 0.6;
+	border-style: dotted;
 }
