@@ -59,7 +59,7 @@ function reset(){
 	word = wordBank[Math.floor(Math.random() * wordBank.length)];	// swith to new word
 
 	createBlanks(word, blankSpace);		// create new blankSpace array for new word
-	guesses = 12						// reset number of guesses
+	guesses = 12;						// reset number of guesses
 }
 
 // create original blankspace array
